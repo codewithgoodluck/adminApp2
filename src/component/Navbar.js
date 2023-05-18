@@ -35,7 +35,7 @@ function Navbar({ toggleSideBar }) {
     <>
  <div className="sticky top-0 fixed z-40  w-full ">
         <div className="fixed mb-0 ml-0 mr-0 mt-0 pb-0 pl-0 pr-0 pt-0"></div>
-        <div className="bg-[#0e5686] ">
+        <div className="bg-[#0e5686] w-full lg:fixed md:w-[80vw] ">
           <div className="flex flex-col">
             <div className="w-full border-b-2 border-gray-200">
               <div className="mx-auto flex h-16 items-center justify-between bg-white px-4">

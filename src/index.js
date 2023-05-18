@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Provider } from "react-redux";
-import { store } from "./app/store";
+import  store  from "../src/reduxstore/store";
 import { AuthProvider } from "./context/AuthProvider";
 import { RecoilRoot } from "recoil";
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -12,7 +12,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
    <RecoilRoot>
+   <Provider store={store}>
     <App/>
+    </Provider>
     </RecoilRoot>
   </BrowserRouter>
 );
